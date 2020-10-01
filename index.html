@@ -11,14 +11,18 @@
 
 
 	<link href="assets/css/styles.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 	<link rel="icon" type="image/png" href="assets/images/favicon-32x32.png" sizes="32x32" />
 	<link rel="icon" type="image/png" href="assets/images/favicon-16x16.png" sizes="16x16" />
 
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
 	</script>
+
+	<!--<script src="https://code.jquery.com/jquery-1.12.4.js"></script>-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js">
 	</script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
@@ -29,6 +33,8 @@
 		href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js">
 	</script>
+
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 
 	<!-- Font Awesome -->
@@ -90,10 +96,10 @@
 
 			<div id="selectFoodBtn" class="d-flex align-items-center justify-content-center flex-column">
 				<div class="row">
-					<div class="col-sm p-3">
+					<div class="col-sm p-3 centreBtns">
 
 						<select id="selectResto" class="selectpicker" data-size="5" data-style="btn-light"
-							data-width="fit" title="Pick your fav">
+							data-width="fit" title="Food">
 							<option value="fast food">Fast Food </option>
 							<option value="japanese restaurant">Japanese Food </option>
 							<option value="chinese restaurant">Chinese </option>
@@ -129,7 +135,10 @@
 			</div>
 
 
+		</div>
 
+		<div id="dialog-form" title="Input Error">
+			<p class="validateTips">Please pick cuisine and radius</p>
 		</div>
 
 	</main>

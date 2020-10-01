@@ -5,7 +5,7 @@
     height: 100%;
     margin: 0;
     padding: 0;
-    background: url("arches-1920x1080.png");
+    background: url("../images/arches.png");
     background-size: cover;
   }
 
@@ -60,3 +60,10 @@ justify-content: center;
 .btnFoodM {
   margin-bottom: 10px;
 }
+
+@media (max-width: 576px) { 
+  .centreBtns {
+    text-align: center;
+  }
+
+ }

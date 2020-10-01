@@ -2,6 +2,21 @@
 var lng = 0;
 var lat = 0;
 
+$('document').ready(function () {
+
+	dialog = $("#dialog-form").dialog({
+		autoOpen: false,
+		height: 250,
+		width: 250,
+		modal: true,
+		buttons: {
+			close: function () {
+				dialog.dialog("close");
+			}
+		}
+	});
+})
+
 showPosition = function (position) {
 
 	lng = position.coords.longitude;
@@ -51,7 +66,14 @@ add_search_term = function () {
 
 	create_user_data(lng, lat, resto_type, radius_select)
 
+	if (radius_select === "" || resto_type === "") {
+		dialog.dialog("open")
+		return '';
+	}
+
 	window.location = "display_page.html";
+
+
 }
 
 render_dropdown_resto = function () {
@@ -83,3 +105,5 @@ render_dropdown_resto_callback = function (response) {
 }
 
 render_dropdown_resto();
+
+

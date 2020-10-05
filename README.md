@@ -59,6 +59,6 @@ images folder      | All images file              |
 
 
 ### Link to the App
-<a href="https://annisapf.github.io/Yomato-Food-Finder/">The URLs of the deployed applications in GitHub</a>
+<a href="https://annisapf.github.io/SubHub-Food-Finder/">The URLs of the deployed applications in GitHub</a>
 
 <a href="https://subhub.site/">Sub Hub Site</a>

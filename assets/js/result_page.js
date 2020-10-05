@@ -30,12 +30,10 @@ show_location_details = function (response, status) {
 
 
 		var imgShow = $('<img>').attr({ "class": "img img-responsive", "src": image_link });
-		//"<img class='img img-responsive' src='" + image_link + "'/>");
 
 		cardBodyImg.append(imgShow)
 		cardImg.append(cardBodyImg)
 		$("#resto-photos").append(cardImg);
-
 
 	}
 }

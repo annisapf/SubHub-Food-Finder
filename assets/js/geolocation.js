@@ -73,7 +73,6 @@ add_search_term = function () {
 
 	window.location = "display_page.html";
 
-
 }
 
 render_dropdown_resto = function () {
